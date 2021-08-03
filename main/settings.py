@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'human',
     'products',
     'apartment',
+    'vendors',
 
     'crispy_forms',
 ]
