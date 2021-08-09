@@ -24,6 +24,7 @@
         <th>Vendor Address</th>
         <th>Phone</th>
         <th>Email</th>
+        <th>Purchasing by Card</th>
     </tr>
     {% for vendor in list_all_vendor %}
         <tr>
@@ -34,6 +35,7 @@
             <td>{{vendor.vendor_address}}</td>
             <td>{{vendor.phone}}</td>
             <td>{{vendor.vendor_email}}</td>
+            <td>{{vendor.accept_card}}</td>
             <td>
               <a href="{% url 'vendor_detail' vendor.id%}" class="btn btn-primary">Detail</a>
               <a href="{% url 'vendor_update' vendor.id%}" class="btn btn-warning">Update</a>
