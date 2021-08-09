@@ -5,7 +5,6 @@ from django.urls import reverse
 class Vendor(models.Model):
     company_name = models.CharField(max_length=200)
     vendor_ID = models.CharField(max_length=50)
-    tax_ID = models.CharField(max_length=50)
     point_contact_name = models.CharField(max_length=200)
     vendor_address = models.CharField(max_length=200)
     phone = models.CharField(max_length=20)
