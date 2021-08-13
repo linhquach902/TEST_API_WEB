@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-2">Material Code</div>
+    <div class="col-2">{{orderPlan.material_code}}</div>
+</div>
+<div class="row">
+    <div class="col-2">Material Name</div>
+    <div class="col-2">{{orderPlan.material_name}}</div>
+</div>
+<div class="row">
+    <div class="col-2">Maker</div>
+    <div class="col-2">{{orderPlan.maker}}</div>
+</div>
+<div class="row">
+    <div class="col-2">Quantity</div>
+    <div class="col-2">{{orderPlan.quantity}}</div>
+</div>
+<div class="row">
+    <div class="col-2">Buying Price</div>
+    <div class="col-2">{{orderPlan.buying_price}}</div>
+</div>
+<div class="row">
+    <div class="col-2">Selling Price</div>
+    <div class="col-2">{{orderPlan.selling_price}}</div>
+</div>
+<div class="row">
+    <div class="col-2">Status</div>
+    <div class="col-2">{{orderPlan.status}}</div>
+</div>
+{% endblock content %}
